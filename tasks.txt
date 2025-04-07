@@ -17,3 +17,7 @@
 --------- Big picture ----------
 - figure out how to match home page header to other pages 
 - 
+
+------------ not that important ---------------
+- find clearer images of pets 
+- 
