@@ -1,3 +1,6 @@
+*{
+    font-family: Arial, Helvetica, sans-serif
+}
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
@@ -39,7 +42,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0;
+    margin: 0;;
 }
 
 nav ul li a {
