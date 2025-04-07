@@ -1,0 +1,19 @@
+-------- Small picture ---------
+
+** front page ** 
+- 
+- 
+
+** about us page **
+- elaborate more on sections 
+    - about us 
+    - mission
+    - how you can help 
+
+** all pages **
+- match font styles 
+- create footer
+
+--------- Big picture ----------
+- figure out how to match home page header to other pages 
+- 
