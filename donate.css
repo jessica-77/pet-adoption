@@ -95,6 +95,14 @@ nav ul li a.active:after {
     font-size: 18px;
     margin: 25px 0 15px;
 }
+.underline {
+    width: 35%;
+    border: 0;
+    height: 1px;
+    background-color: black;
+    margin: 20px 0;
+
+}
 
 /* Amount Input Styling */
 .amount-section {
