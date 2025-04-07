@@ -287,21 +287,49 @@ nav ul li a.active:after {
 /* FAQ Section */
 .faq-section {
     margin-top: 40px;
-}
-
-.faq-section hr {
-    border: 0;
-    height: 1px;
-    background-color: #ddd;
-    margin: 20px 0;
+    border-top: 1px solid #eee;
 }
 
 .faq-item {
-    padding: 10px 0;
-    cursor: pointer;
     border-bottom: 1px solid #eee;
 }
 
-.faq-item:hover {
+.faq-question {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    padding: 15px 0;
+    font-size: 16px;
+    cursor: pointer;
+    color: #333;
+    position: relative;
+}
+
+.faq-question:hover {
     color: #ff6b6b;
+}
+
+.faq-question:after {
+    content: '+';
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    color: #ff6b6b;
+}
+
+.faq-question.active:after {
+    content: '-';
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 0 20px;
+}
+
+.faq-answer p {
+    margin: 0 0 15px 0;
+    padding: 0;
 }
