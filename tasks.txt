@@ -20,4 +20,4 @@
 
 ------------ not that important ---------------
 - find clearer images of pets 
-- 
+- create folders for each page (html, css, and js) to be more organized
