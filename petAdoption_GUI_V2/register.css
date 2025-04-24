@@ -1,0 +1,338 @@
+*{
+    font-family: Arial, Helvetica, sans-serif
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Updated Header Styles */
+.simple-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #fff0ed;
+    border-bottom: 1px solid #fff0ed;
+}
+
+.logo-section {
+    display: flex;
+    gap: 20px;
+}
+
+.logo-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
+nav ul li {
+    margin: 0;;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 5px 0;
+    position: relative;
+}
+
+nav ul li a.active {
+    color: #99d1ae;
+}
+
+nav ul li a.active:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #99d1ae;
+}
+
+/* Remove the auth buttons from the header since they're not in this design */
+.auth-buttons {
+    display: none;
+}
+
+/* Donation Section */
+.register-section {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.register-section h1 {
+    color: #99d1ae;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.register-section h2 {
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.register-section h3 {
+    font-size: 18px;
+    margin: 25px 0 15px;
+}
+.underline {
+    width: 48%;
+    border: 0;
+    height: 1px;
+    background-color: black;
+    margin: 20px 0;
+
+}
+
+/* Amount Input Styling */
+.user-info {
+    margin-bottom: 25px;
+}
+
+.user-info label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.user-info-container {
+    position: relative;
+    display: inline-block;
+}
+
+.dollar-sign {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+    color: #555;
+}
+
+.amount-input {
+    padding: 12px 15px 12px 30px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 150px;
+}
+
+/* Tier Options Styling */
+.tier-options {
+    margin-bottom: 25px;
+}
+
+.tier-title {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.tier-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tier-radio {
+    margin: 0;
+    padding: 0;
+}
+
+.tier-radio input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.tier-btn {
+    display: block;
+    padding: 10px 15px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s;
+    white-space: nowrap;
+}
+
+.tier-radio input[type="radio"]:checked + .tier-btn {
+    background-color: #99d1ae;
+    color: white;
+    border-color: #99d1ae;
+}
+
+.tier-btn:hover {
+    background-color: #e0e0e0;
+}
+/* Remove the old amount-options styles if they exist */
+.amount-options {
+    display: none;
+}
+
+
+/* Checkbox Styles */
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.checkbox-container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+    background-color: #99d1ae;
+    border-color: #99d1ae;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkbox-container .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 45%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.sign-up-btn {
+    background-color: #99d1ae;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.sign-up-btn:hover {
+    background-color: #fae1dd;
+}
+
+/* FAQ Section */
+.faq-section {
+    margin-top: 40px;
+    border-top: 1px solid #eee;
+}
+
+.faq-item {
+    border-bottom: 1px solid #eee;
+}
+
+.faq-question {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    padding: 15px 0;
+    font-size: 16px;
+    cursor: pointer;
+    color: #333;
+    position: relative;
+}
+
+.faq-question:hover {
+    color: #99d1ae;
+}
+
+.faq-question:after {
+    content: '+';
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    color: #99d1ae;
+}
+
+.faq-question.active:after {
+    content: '-';
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 0 20px;
+}
+
+.faq-answer p {
+    margin: 0 0 15px 0;
+    padding: 0;
+}
