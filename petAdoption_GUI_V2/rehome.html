@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Pet Adoption</title>
+    <link rel="stylesheet" href="rehome.css">
+</head>
+<body style="background-color: #fffbf7;">
+    <!-------------------HEADER----------------------->
+    <header class="simple-header">
+        <div class="logo-section">
+            <a href="index.html" class="logo-link">HOME</a>
+            <a href="about_us.html" class="logo-link">ABOUT US</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="register.html">REGISTER</a></li>
+                <li><a href="questionnaire.html">TAKE OUR QUESTIONNAIRE</a></li>
+                <li><a href="rehome.html">REHOME</a></li>
+                <li><a href="donate.html" class="active">DONATE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="rehome-section">
+            <h1>Rehome</h1>
+            <h2>Find a new home for your furry friend!</h2>
+            
+            <!------------- Personal Information -------------->
+            <div class="pet-info">
+                <h3>Personal Information</h3>
+                <hr class="underline">
+                <div class="form-group">
+                    <label>Full Name:</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-group">
+                    <label>Phone Number:</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-group">
+                    <label>Email:</label>
+                    <input type="text" required>
+                </div>
+                
+            </div>
+
+
+
+            <!------------- Pet Information ---------->
+            <div class="pet-info">
+                <h3>Pet Information</h3>
+                <hr class="underline">
+                <div class="form-group">
+                    <label>Pet name:</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-group">
+                    <label>Breed:</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-group">
+                    <label>Age:</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-group">
+                    <label>List Health Conditions (Leave Empty if None):</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-group">
+                    <label>Reason for Rehome:</label>
+                    <input type="text" required>
+                </div>
+                
+                <button class="submit-application-btn">Submit Application</button>
+            </div>
+
+            <!----------------- FAQ Section --------------->
+            <div class="faq-section">
+                <div class="faq-item">
+                    <button class="faq-question">Why do people 'Rehome' their pets?</button>
+                    <div class="faq-answer">
+                        <p>Some common reasons why people choose to rehome their pet if because of new living conditions. Some people move homes and now they have no yard or their landlord prohibites pets. Instead of trying to make the living situation work when it most likely wont, rehome-ing will give your pet a new home that better fits their needs.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">What does it mean to 'Rehome'?</button>
+                    <div class="faq-answer">
+                        <p>The term 'rehome' in this context essentially means to put your pet up for adoption. While this is a hard decision to make, it sometimes might be whats best for the pet if their current owners can no longer take care of them</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">How will I know when my pet receives a new home?</button>
+                    <div class="faq-answer">
+                        <p>You will receive an email alerting you that a new home was found and some general information regarding the rehome process.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">I'm not sure what to answer for "Reason for Rehome".</button>
+                    <div class="faq-answer">
+                        <p>Answer may vary based on your situation but here are some common reasons:<br><br>
+                        - Landlord implemented a no pet regulation.<br>
+                        - New job requires me to travel often.<br>
+                        - Financial issues.<br>
+                        - Prefer not to say.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!------------------- Linked js ----------------------->
+    <script src="donate.js"></script>
+</body>
+</html>
