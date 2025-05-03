@@ -18,7 +18,7 @@
     </div>
     <nav>
         <ul>
-            <li><a href="register.html">REGISTER</a></li>
+            <li><a href="application.html">APPLICATION</a></li>
             <!-- <li><a href="questionnaire.html">TAKE OUR QUESTIONNAIRE</a></li> -->
             <li><a href="rehome.html">REHOME</a></li>
             <li><a href="donate.html" class="active">DONATE</a></li>
@@ -43,8 +43,8 @@
             <h1>Your Help Makes an Impact</h1>
             <p>Adopt    Foster    Rehome    Donate</p>
             <div>
-                <button class="register_btn" type="button"><span class="cover"></span>REGISTER</button>
-                <button class="login_btn" type="button"><span class="cover"></span>LOG IN</button>
+                <button class="register_btn" type="button" onclick="location.href='application.html'"><span class="cover"></span>ADOPT</button>
+                <button class="login_btn" type="button" onclick="location.href='rehome.html'"><span class="cover"></span>REHOME</button>
             </div>
         </div>
     </div>
@@ -124,7 +124,7 @@
             <div class="pet-card">
                 <div class="pet-image">
                     <a href="profiles/espresso_profile.html">
-                        <img src="profiles/pet_images/dog_espresso_YorkshireTerrier.jpg" class="pet-thumb" alt="">
+                        <img src="../images/dog_espresso_YorkshireTerrier.jpg" class="pet-thumb" alt="">
                     </a>
                     <button class="pet-card-btn">ADOPT/FOSTER</button>
                 </div>
@@ -167,15 +167,46 @@
         <h2 class="pet-category">Upcoming Events</h2>
         <div class="pet-upcoming-events">
             <div class="pet-event">
-                <img src="images/A benefit event fAor the stray dogs of Fullerton CA.jpg" class="pet-event-image" alt="" width="500" height="300">
+                <img src="images/Calling all First-Time Pet Owners.jpg" class="pet-event-image" alt="" width="500" height="300">
             </div>
-        </div>
-    <h2 class="pet-category">Upcoming Events</h2>
-        <div class="pet-upcoming-events">
             <div class="pet-event">
-                <img src="images/A benefit event fAor the stray dogs of Fullerton CA.jpg" class="pet-event-image" alt="" width="500" height="300">
+                <img src="images/Puppy Therapy.jpg" class="pet-event-image" alt="" width="500" height="300">
+            </div>
+            <div class="pet-event">
+                <img src="images/Paint your Pet Day.jpg" class="pet-event-image" alt="" width="500" height="300">
             </div>
         </div>
+
+    <!-------------------FOOTER----------------------->
+    <div class="footer-container">
+        <div class="footer">
+            <div class="footer-heading footer-1">
+                <h2> About Us</h2>
+                <a href="about_us.html" style="font-weight: 600;">Our Mission</a>
+                <a href="index.html" style="font-weight: 600;">Events</a>
+                <a href="about_us.html" style="font-weight: 600;">Sponsers</a>
+                <a href="about_us.html" style="font-weight: 600;">Terms of Service</a>
+            </div>
+            <div class="footer-heading footer-2">
+                <h2>Get Involved</h2>
+                <a href="index.html" style="font-weight: 600;">Upcoming Events</a>
+                <a href="about_us.html" style="font-weight: 600;">Volunteers</a>
+                <a href="donate.html" style="font-weight: 600;">Donate</a>
+            </div>
+            <div class="footer-heading footer-3">
+                <h2>Contact Us</h2>
+                <a href="#" style="font-weight: 600;">Phone: (909)-123-4567</a>
+                <a href="#" style="font-weight: 600;">Email: petAdoptionjb@gmail.com</a>
+                <a href="#" style="font-weight: 600;">Instagram: @petAdoption</a>
+                <a href="#" style="font-weight: 600;">Address: 123 Pet Adoption St. Fullerton, CA</a>
+            </div>
+            <div class="footer-email-form">
+                <h2>Join our newsletter</h2>
+                <input type="email" placeholder="Enter your email address" id="footer-email">
+                <input type="submit" value="Sign Up" id="footer-email-btn">
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
