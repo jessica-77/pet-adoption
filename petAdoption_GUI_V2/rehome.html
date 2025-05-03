@@ -15,7 +15,7 @@
         </div>
         <nav>
             <ul>
-                <li><a href="register.html">REGISTER</a></li>
+                <li><a href="application.html">APPLICATION</a></li>
                 <!-- <li><a href="questionnaire.html">TAKE OUR QUESTIONNAIRE</a></li> -->
                 <li><a href="rehome.html">REHOME</a></li>
                 <li><a href="donate.html" class="active">DONATE</a></li>
@@ -75,8 +75,9 @@
                     <label>Reason for Rehome:</label>
                     <input type="text" required>
                 </div>
+
+                <button class="submit-application-btn" onclick=showLoginDialog()>Submit Application</button>
                 
-                <button class="submit-application-btn">Submit Application</button>
             </div>
 
             <!----------------- FAQ Section --------------->
@@ -115,7 +116,55 @@
             </div>
         </section>
     </main>
+
+    <dialog id = "login-dialog">
+        <h2>Successfully submitted!</h2>
+        <h4>Thank you for applying, you are making a difference. We will review your application and send status updates to the email you provided.</h4>
+        <form>
+            <button>Close</button>
+        </form>
+    </dialog>
+    
+    <script>
+        const dialog = document.getElementById("login-dialog")
+        function showLoginDialog(){
+            dialog.showModal()
+        }
+    </script>
+
+    <!-------------------FOOTER----------------------->
+    <div class="footer-container">
+        <div class="footer">
+            <div class="footer-heading footer-1">
+                <h2> About Us</h2>
+                <a href="about_us.html" style="font-weight: 600;">Our Mission</a>
+                <a href="index.html" style="font-weight: 600;">Events</a>
+                <a href="about_us.html" style="font-weight: 600;">Sponsers</a>
+                <a href="about_us.html" style="font-weight: 600;">Terms of Service</a>
+            </div>
+            <div class="footer-heading footer-2">
+                <h2>Get Involved</h2>
+                <a href="index.html" style="font-weight: 600;">Upcoming Events</a>
+                <a href="about_us.html" style="font-weight: 600;">Volunteers</a>
+                <a href="donate.html" style="font-weight: 600;">Donate</a>
+            </div>
+            <div class="footer-heading footer-3">
+                <h2>Contact Us</h2>
+                <a href="#" style="font-weight: 600;">Phone: (909)-123-4567</a>
+                <a href="#" style="font-weight: 600;">Email: petAdoptionjb@gmail.com</a>
+                <a href="#" style="font-weight: 600;">Instagram: @petAdoption</a>
+                <a href="#" style="font-weight: 600;">Address: 123 Pet Adoption St. Fullerton, CA</a>
+            </div>
+            <div class="footer-email-form">
+                <h2>Join our newsletter</h2>
+                <input type="email" placeholder="Enter your email address" id="footer-email">
+                <input type="submit" value="Sign Up" id="footer-email-btn">
+            </div>
+        </div>
+    </div>
+    
     <!------------------- Linked js ----------------------->
     <script src="donate.js"></script>
 </body>
 </html>
+
