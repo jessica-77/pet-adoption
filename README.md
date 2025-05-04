@@ -17,3 +17,11 @@ Welcome to Berenice and Jessica's 362 Software Engineering Project
 * MySql
 
 ## How to Use Our Program
+1. Clone the repository to any location on your computer
+    ex. Desktop 
+2. open index.html on an IDE of your choice 
+    ex. VSCode
+3. Double click anywhere on the file to pull up a dock 
+4. Click "Open in Default Browser"
+5. You have now opened our adoption website
+6. Navigate through the website 
