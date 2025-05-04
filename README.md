@@ -10,8 +10,10 @@ Welcome to Berenice and Jessica's 362 Software Engineering Project
 
 ## Languages and IDE
 
-* Python
 * JavaScript
 * HTML
 * Visual Studio
-* Python tkinter 
+* XAMPP
+* MySql
+
+## How to Use Our Program
