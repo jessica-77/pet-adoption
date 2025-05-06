@@ -166,27 +166,25 @@ nav ul li a.active:after {
     opacity: 0;
 }
 
-.submit-application-btn {
-    display: block;
-    padding: 10px 15px;
-    background-color: #f0f0f0;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: all 0.3s;
-    white-space: nowrap;
-}
-
-.submit-application-btn input[type="radio"]:checked + .tier-btn {
+/* styling for buttons */
+.sign-up-btn {
     background-color: #99d1ae;
     color: white;
-    border-color: #99d1ae;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s;
 }
 
-.submit-application-btn:hover {
-    background-color: #e0e0e0;
+.sign-up-btn:hover {
+    background-color: #fae1dd;
 }
+
+
 /* Remove the old amount-options styles if they exist */
 .amount-options {
     display: none;
