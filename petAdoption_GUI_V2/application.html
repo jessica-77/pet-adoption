@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate - Pet Adoption</title>
     <link rel="stylesheet" href="application.css">
+    <script src="application.js"></script>
 </head>
 <body style="background-color: #fffbf7;">
     <!-------------------HEADER----------------------->
@@ -26,78 +27,79 @@
     <main>
         <section class="register-section">
             <h1>Ready to Adopt? Submit an application here!</h1>
+            <h2>Find your best friend!</h2>
+
+            <form>
+                <div class="user-info">
+                    <!------------- Personal Information -------------->
+                    <h3>Personal Information</h3>
+                    <hr class="underline">
+                    <div class="form-group">
+                        <label>First Name:</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Last Name:</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email:</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number:</label>
+                        <input type="text" required>
+                    </div>
+                    <!------------- Pet Preferences -------------->
+                    <h3>Pet Preferences</h3>
+                    <hr class="underline">
+                    <div class="form-group">
+                        <label>If you already found a pet from our website, add their name:</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>What kind of pet would you line to adopt (cat, dog, no preference)?</label>
+                        <input type="text" required>
+                    </div>
+                    <!------------- Housing Information -------------->
+                    <h3>Housing Information</h3>
+                    <hr class="underline">
             
-            <!------------- Personal Information -------------->
-            <div class="user-info">
-                <h3>Personal Information</h3>
-                <hr class="underline">
-                <div class="form-group">
-                    <label>First Name:</label>
-                    <input type="text" required>
+                    <div class="form-group">
+                        <label>Tell us about your living situations (house, appartment, dorm etc.):</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Do you have a backyard?</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Do you have access to an outside area (park, hiking trail, lake, beach, etc.)?</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Do you own other pets? If yes, include pet type, breed and age.</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>How many adults do you live with?</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Do you live with children?</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>How would you describe your home environment (calm, quiet, noisy, hectic etc.)?</label>
+                        <input type="text" required>
+                    </div>
+                    
+                    <button type="button" id="submit-btn" class="sign-up-btn">Submit Application</button>
+    
                 </div>
-                <div class="form-group">
-                    <label>Last Name:</label>
-                    <input type="text" required>
-                </div>
-                <div class="form-group">
-                    <label>Email:</label>
-                    <input type="text" required>
-                </div>
-                <div class="form-group">
-                    <label>Phone Number:</label>
-                    <input type="text" required>
-                </div>
-                <!------------- Pet Preferences -------------->
-                <h3>Pet Preferences</h3>
-                <hr class="underline">
-                <div class="form-group">
-                    <label>If you already found a pet from our website, add their name:</label>
-                    <input type="text" required>
-                </div>
-                <div class="form-group">
-                    <label>What kind of pet would you line to adopt (cat, dog, no preference)?</label>
-                    <input type="text" required>
-                </div>
-                <!------------- Housing Information -------------->
-                <h3>Housing Information</h3>
-                <hr class="underline">
-                <div class="form-group">
-                    <label>Address:</label>
-                    <input type="text" required>
-                </div>
-                <div class="form-group">
-                    <label>Tell us about your living situations (house, appartment, dorm etc.):</label>
-                    <input type="text" required>
-                </div>
-                <div class="form-group">
-                    <label>Do you have a backyard?</label>
-                    <input type="text" required>
-                </div>
-                <div class="form-group">
-                    <label>Do you have access to an outside area (park, hiking trail, lake, beach, etc.)?</label>
-                    <input type="text" required>
-                </div>
-                <div class="form-group">
-                    <label>Do you own other pets? If yes, include pet type, breed and age.</label>
-                    <input type="text" required>
-                </div>
-                <div class="form-group">
-                    <label>How many adults do you live with?</label>
-                    <input type="text" required>
-                </div>
-                <div class="form-group">
-                    <label>Do you live with children?</label>
-                    <input type="text" required>
-                </div>
-                <div class="form-group">
-                    <label>How would you describe your home environment (calm, quiet, noisy, hectic etc.)?</label>
-                    <input type="text" required>
-                </div>
-                
-                <a href="thank_you.html"><button class="sign-up-btn">Submit Application</button></a>
-
-
-            </div>
+            </form>
+            
+            
            
         </section>
     </main>
