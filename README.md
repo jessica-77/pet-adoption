@@ -20,8 +20,6 @@ Welcome to Berenice and Jessica's 362 Software Engineering Project
     We cloned it onto our desktop
 2. Navigate to petAdoption_GUI_V2 using the terminal or simply by opening the folder on your finder 
 3. Find the file, 'index.html', this is our main page. 
-4. On Mac and Windows you can double tap the index.html file and it should automatically open on your default browser 
-    !! if youre having issues, open 'index.html' on an IDE of your choice (we used VSCode), double click anywhere on the file to pull up a dock 
-    Click "Open in Default Browser"
+4. On Mac and Windows you can double tap the index.html file and it should automatically open on your default browser. If you're having issues, open 'index.html' on an IDE of your choice (we used VSCode), double click anywhere on the file to pull up a dock. Click "Open in Default Browser"
 5. You have now opened our adoption website
 6. Navigate through the website 
