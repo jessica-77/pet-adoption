@@ -1,182 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UFT-8">
-    <meta http-equiv="X-UA_Compatible" content="IE-edge">
-    <meta name="viewport" connect ="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;900&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
-    <title>Pet Adoption</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Pet Adoption</title>
+    <link rel="stylesheet" href="application.css">
 </head>
-<!-------------------HEADER----------------------->
-<header class="simple-header">
-    <div class="logo-section">
-        <a href="index.html" class="logo-link">HOME</a>
-        <a href="about_us.html" class="logo-link">ABOUT US</a>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="application.html">APPLICATION</a></li>
-            <!-- <li><a href="questionnaire.html">TAKE OUR QUESTIONNAIRE</a></li> -->
-            <li><a href="rehome.html">REHOME</a></li>
-            <li><a href="donate.html" class="active">DONATE</a></li>
-        </ul>
-    </nav>
-</header>
 <body style="background-color: #fffbf7;">
-    <div class="banner">
-        <div class="navbar">
-            <img src="" alt="" class="logo">
-            <!-- <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Register</a></li>
-                <li><a href="#">Take our Questionare</a></li>
-                <li><a href="#">Rehome</a></li>
-                <li><a href="donate.html">Donate</a></li>
-                <li><a href="about_us.html">About Us</a></li>
-            </ul> -->
+    <!-------------------HEADER----------------------->
+    <header class="simple-header">
+        <div class="logo-section">
+            <a href="index.html" class="logo-link">HOME</a>
+            <a href="about_us.html" class="logo-link">ABOUT US</a>
         </div>
+        <nav>
+            <ul>
+                <li><a href="application.html">APPLICATION</a></li>
+                <!-- <li><a href="questionnaire.html">TAKE OUR QUESTIONNAIRE</a></li> -->
+                <li><a href="rehome.html">REHOME</a></li>
+                <li><a href="donate.html" class="active">DONATE</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <div class="content">
-            <h1>Your Help Makes an Impact</h1>
-            <p>Adopt    Foster    Rehome    Donate</p>
-            <div>
-                <button class="register_btn" type="button" onclick="location.href='application.html'"><span class="cover"></span>ADOPT</button>
-                <button class="login_btn" type="button" onclick="location.href='rehome.html'"><span class="cover"></span>REHOME</button>
-            </div>
-        </div>
-    </div>
+    <main>
+        <section class="register-section">
+            <h1>Ready to Adopt? Submit an application here!</h1>
+            
+            <form onsubmit="submitMessage(event)">
+                <!------------- Personal Information -------------->
+                <div class="user-info">
+                    <h3>Personal Information</h3>
+                    <hr class="underline">
+                    <div class="form-group">
+                        <label>First Name:</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Last Name:</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email:</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number:</label>
+                        <input type="text" required>
+                    </div>
+                    <!------------- Pet Preferences -------------->
+                    <h3>Pet Preferences</h3>
+                    <hr class="underline">
+                    <div class="form-group">
+                        <label>If you already found a pet from our website, add their name:</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>What kind of pet would you line to adopt (cat, dog, no preference)?</label>
+                        <input type="text" required>
+                    </div>
+                    <!------------- Housing Information -------------->
+                    <h3>Housing Information</h3>
+                    <hr class="underline">
+                    <div class="form-group">
+                        <label>Address:</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Tell us about your living situations (house, appartment, dorm etc.):</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Do you have a backyard?</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Do you have access to an outside area (park, hiking trail, lake, beach, etc.)?</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Do you own other pets? If yes, include pet type, breed and age.</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>How many adults do you live with?</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Do you live with children?</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>How would you describe your home environment (calm, quiet, noisy, hectic etc.)?</label>
+                        <input type="text" required>
+                    </div>
+                    
+                    <button type="submit" class="sign-up-btn">Submit Application</button>
 
-    <!-------------------SLIDER----------------------->
-    <section class="pet">
-        <h2 class="pet-category">Pets Available for Adoption</h2>
-        <button class="pre-btn"><img src="images/arrow.png" alt=""></button>
-        <button class="nxt-btn"><img src="images/arrow.png" alt=""></button>
-        <div class="pet-container">
-    
-            <div class="pet-card">
-                <div class="pet-image">
-                    <a href="profiles/clifford_profile.html">
-                        <img src="images/Dog_1.jpg" class="pet-thumb" alt="">
-                    </a>
-                    <button class="pet-card-btn">ADOPT/FOSTER</button>
-                </div>
-                <div class="pet-info">
-                    <h2 class="pet-name">Clifford</h2>
-                    <p class="pet-short-description">Full of energy and loves walks</p>
-                </div>
-            </div>
-    
-            <div class="pet-card">
-                <div class="pet-image">
-                    <a href="profiles/slinky_profile.html">
-                        <img src="images/Dog_3.jpg" class="pet-thumb" alt="">
-                    </a>
-                    <button class="pet-card-btn">ADOPT/FOSTER</button>
-                </div>
-                <div class="pet-info">
-                    <h2 class="pet-name">Slinky</h2>
-                    <p class="pet-short-description">Super friendly and fashionable</p>
-                </div>
-            </div>
-    
-            <div class="pet-card">
-                <div class="pet-image">
-                    <a href="profiles/sprinkles_profile.html">
-                        <img src="images/cat_sprinkles_Siamese.jpg" class="pet-thumb" alt="">
-                    </a>
-                    <button class="pet-card-btn">ADOPT/FOSTER</button>
-                </div>
-                <div class="pet-info">
-                    <h2 class="pet-name">Sprinkles</h2>
-                    <p class="pet-short-description">Loves naps and treats</p>
-                </div>
-            </div>
-    
-            <div class="pet-card">
-                <div class="pet-image">
-                    <a href="profiles/bowie_profile.html">
-                        <img src="images/dog_bowie_Cavalier.jpg" class="pet-thumb" alt="">
-                    </a>
-                    <button class="pet-card-btn">ADOPT/FOSTER</button>
-                </div>
-                <div class="pet-info">
-                    <h2 class="pet-name">Bowie</h2>
-                    <p class="pet-short-description">Enjoys walks to the park</p>
-                </div>
-            </div>
-    
-            <div class="pet-card">
-                <div class="pet-image">
-                    <a href="profiles/jiji_profile.html">
-                        <img src="images/cat_jiji_Bombay.jpg" class="pet-thumb" alt="">
-                    </a>
-                    <button class="pet-card-btn">ADOPT/FOSTER</button>
-                </div>
-                <div class="pet-info">
-                    <h2 class="pet-name">Jiji</h2>
-                    <p class="pet-short-description">Loves to keep warm</p>
-                </div>
-            </div>
-    
-            <div class="pet-card">
-                <div class="pet-image">
-                    <a href="profiles/espresso_profile.html">
-                        <img src="images/dog_espresso_YorkshireTerrier.jpg" class="pet-thumb" alt="">
-                    </a>
-                    <button class="pet-card-btn">ADOPT/FOSTER</button>
-                </div>
-                <div class="pet-info">
-                    <h2 class="pet-name">Espresso</h2>
-                    <p class="pet-short-description">Always ready for a treat</p>
-                </div>
-            </div>
-    
-            <div class="pet-card">
-                <div class="pet-image">
-                    <a href="profiles/pluto_profile.html">
-                        <img src="images/cat_DomesticShortHair.jpg" class="pet-thumb" alt="">
-                    </a>
-                    <button class="pet-card-btn">ADOPT/FOSTER</button>
-                </div>
-                <div class="pet-info">
-                    <h2 class="pet-name">Pluto</h2>
-                    <p class="pet-short-description">Prefers calmer environments</p>
-                </div>
-            </div>
-    
-            <div class="pet-card">
-                <div class="pet-image">
-                    <a href="profiles/rex_profile.html">
-                        <img src="images/dog_rex_GermanShepherd.jpeg" class="pet-thumb" alt="">
-                    </a>
-                    <button class="pet-card-btn">ADOPT/FOSTER</button>
-                </div>
-                <div class="pet-info">
-                    <h2 class="pet-name">Rex</h2>
-                    <p class="pet-short-description">Expert at playing catch</p>
-                </div>
-            </div>
-    
-        </div>
-    </section>
-    
-    <!-------------------UPCOMING EVENTS----------------------->
-        <h2 class="pet-category">Upcoming Events</h2>
-        <div class="pet-upcoming-events">
-            <div class="pet-event">
-                <img src="images/Calling all First-Time Pet Owners.jpg" class="pet-event-image" alt="" width="500" height="300">
-            </div>
-            <div class="pet-event">
-                <img src="images/Puppy Therapy.jpg" class="pet-event-image" alt="" width="500" height="300">
-            </div>
-            <div class="pet-event">
-                <img src="images/Paint your Pet Day.jpg" class="pet-event-image" alt="" width="500" height="300">
-            </div>
-        </div>
 
+                </div>
+            </form>
+
+            <script>
+                function submitMessage(event){
+                    event.preventDefault();
+                    window.location.href = "thank_you.html";
+                }
+            </script>
+           
+        </section>
+    </main>
+
+    
     <!-------------------FOOTER----------------------->
     <div class="footer-container">
         <div class="footer">
@@ -208,7 +143,8 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <!------------------- Linked js ----------------------->
+    <script src="donate.js"></script>
 </body>
 </html>
 
